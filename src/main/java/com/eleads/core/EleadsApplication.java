@@ -16,7 +16,7 @@ public class EleadsApplication {
 	@GetMapping("/")
 	public String home(){
 
-		return "home";
+		return "index";
 	}
 
 
