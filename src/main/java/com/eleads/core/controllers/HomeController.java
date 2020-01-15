@@ -15,13 +15,13 @@ public class HomeController{
     @GetMapping("/user")
 	public String user(){
 
-		return "index";
+		return "customer";
     }
     
     @GetMapping("/admin")
 	public String admin(){
 
-		return "index";
+		return "dashboard";
 	}
 
 }
