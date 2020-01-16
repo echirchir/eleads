@@ -33,15 +33,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
     protected void configure(HttpSecurity http) throws Exception {
         
         http.authorizeRequests()
+        .antMatchers("/").permitAll()
         .antMatchers("/js/**",  "/css/**", "/img/**").permitAll()
         .antMatchers("/admin").hasRole("ADMIN")
         .antMatchers("/user").hasAnyRole("ADMIN", "USER")
-        .antMatchers("/").permitAll()
         .antMatchers("/login").permitAll()
         .antMatchers("/register").permitAll()
         .and()
         .logout()
-        .logoutRequestMatcher(new AntPathRequestMatcher("/"))
         .logoutSuccessUrl("/")
         .invalidateHttpSession(true)
         .clearAuthentication(true)
