@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -32,11 +33,32 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
     protected void configure(HttpSecurity http) throws Exception {
         
         http.authorizeRequests()
+        .antMatchers("/js/**",  "/css/**", "/img/**").permitAll()
         .antMatchers("/admin").hasRole("ADMIN")
         .antMatchers("/user").hasAnyRole("ADMIN", "USER")
         .antMatchers("/").permitAll()
-        .and().formLogin().successHandler(successHandler);
+        .antMatchers("/login").permitAll()
+        .antMatchers("/register").permitAll()
+        .and()
+        .logout()
+        .logoutRequestMatcher(new AntPathRequestMatcher("/"))
+        .logoutSuccessUrl("/")
+        .invalidateHttpSession(true)
+        .clearAuthentication(true)
+        .permitAll()
+        .and()
+        .exceptionHandling()
+        .accessDeniedPage("/access-denied")
+        .and()
+        .formLogin()
+            .loginPage("/login")
+            .loginProcessingUrl("/login")
+            .successHandler(successHandler)
+            .permitAll();
 
+        http.csrf().disable();
+        
+        
     }
 
     @Bean
