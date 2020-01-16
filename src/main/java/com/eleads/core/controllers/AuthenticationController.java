@@ -1,6 +1,7 @@
 package com.eleads.core.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -17,7 +18,7 @@ public class AuthenticationController{
     }
 
     @GetMapping("/register")
-	public ModelAndView register(){
+	public ModelAndView register(Model model){
 
 		ModelAndView registerView = new ModelAndView();
         registerView.setViewName("register");
