@@ -1,8 +1,8 @@
 # ROOM NAMES CATEGORIES
 
-## DELUXE
+### DELUXE
 
-    -SINGLE
+- SINGLE
 
         -NUMBER OF BEDS (1)
 
@@ -10,60 +10,70 @@
 
             -BED SIZE (SINGLE(90X130CM WIDE))
 
-    -DOUBLE
+        -MEAL PLANS
+
+            -BED ONLY
+
+            -BED & BREAKFAST
+
+            -HALF BOARD (Breakfast & dinner incl.)
+
+            -FULL BOARD (All meals incl.)
+
+- DOUBLE
 
             -BED TYPE (SINGLE, DOUBLE, LARGE, XTRA LARGE, BUNK)
 
             -BED SIZE (SINGLE(90X130CM WIDE), DOUBLE(131X150CM WIDE))
 
-    -TWIN
+- TWIN
 
             -BED TYPE (SINGLE, DOUBLE, LARGE, XTRA LARGE, BUNK)
 
             -BED SIZE (SINGLE(90X130CM WIDE), DOUBLE(131X150CM WIDE))
 
-    -TRIPPLE
+- TRIPPLE
 
-    -FAMILY SUITE
+- FAMILY SUITE
 
-## STANDARD
+### STANDARD
 
-    -SINGLE
+- SINGLE
 
-    -DOUBLE
+- DOUBLE
 
-    -TWIN
+- TWIN
 
-    -TRIPPLE
+- TRIPPLE
 
-    -FAMILY SUITE
+- FAMILY SUITE
 
-## SUPERIOR
+### SUPERIOR
 
-    -SINGLE
+- SINGLE
 
-    -DOUBLE
+- DOUBLE
 
-    -TWIN
+- TWIN
 
-    -TRIPPLE
+- TRIPPLE
 
-    -FAMILY SUITE
+- FAMILY SUITE
 
-## PRESIDENTIAL
+### PRESIDENTIAL
 
-    -SINGLE
+- SINGLE
 
-    -DOUBLE
+- DOUBLE
 
-    -TWIN
+- TWIN
 
-    -TRIPPLE
+- TRIPPLE
 
-    -FAMILY SUITE
+- FAMILY SUITE
 
 
-# CUSTOMER (ATTRIBUTES)
+# CUSTOMER (schema)
 
 - HOTEL ID (generated)
 
@@ -77,10 +87,19 @@
 
 - MODE OF PAYMENT
 
-- HOTEL INFORMATION 
+- HAS_MANY_HOTELS (relationship btw customer & hotels)
 
-    - Description of the hotel
-    - Facilities like swimming pool, spa, conference, gym
+# HOTEL INFORMATION (schema)
+
+- Description of the hotel
+- Facilities like swimming pool, spa, conference, gym, restaurant, bar
+- Photos for slides
+- What is nearby (surrounding area)
+- Terms & Conditions
+
+# NOTE
+
+Acquire a new domain for a hotel-oriented branding e.g [http://reservationportal.com/panorama/rooms](Panorama website)
 
 
 
