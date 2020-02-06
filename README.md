@@ -1,46 +1,32 @@
-```ROOM NAMES CATEGORIES```
+# ROOM NAMES CATEGORIES
 
--DELUXE
+## DELUXE
 
     -SINGLE
 
-        -NUMBER OF BEDS
+        -NUMBER OF BEDS (1)
 
-            -BED SIZE
+            -BED TYPE (SINGLE, DOUBLE, LARGE, XTRA LARGE, BUNK)
+
+            -BED SIZE (SINGLE(90X130CM WIDE))
 
     -DOUBLE
 
+            -BED TYPE (SINGLE, DOUBLE, LARGE, XTRA LARGE, BUNK)
+
+            -BED SIZE (SINGLE(90X130CM WIDE), DOUBLE(131X150CM WIDE))
+
     -TWIN
+
+            -BED TYPE (SINGLE, DOUBLE, LARGE, XTRA LARGE, BUNK)
+
+            -BED SIZE (SINGLE(90X130CM WIDE), DOUBLE(131X150CM WIDE))
 
     -TRIPPLE
 
     -FAMILY SUITE
 
--STANDARD
-
-    -SINGLE
-
-    -DOUBLE
-
-    -TWIN
-
-    -TRIPPLE
-
-    -FAMILY SUITE
-
--SUPERIOR
-
-    -SINGLE
-
-    -DOUBLE
-
-    -TWIN
-
-    -TRIPPLE
-
-    -FAMILY SUITE
-
--PRESIDENTIAL
+## STANDARD
 
     -SINGLE
 
@@ -52,8 +38,52 @@
 
     -FAMILY SUITE
 
+## SUPERIOR
 
-```HOTELS```
+    -SINGLE
+
+    -DOUBLE
+
+    -TWIN
+
+    -TRIPPLE
+
+    -FAMILY SUITE
+
+## PRESIDENTIAL
+
+    -SINGLE
+
+    -DOUBLE
+
+    -TWIN
+
+    -TRIPPLE
+
+    -FAMILY SUITE
+
+
+# CUSTOMER (ATTRIBUTES)
+
+- HOTEL ID (generated)
+
+- CUSTOMER NAME
+
+- EMAIL ADDRESS (pk)
+
+- PHONE NUMBER (alt pk)
+
+- LOCATION (ADDRESS)
+
+- MODE OF PAYMENT
+
+- HOTEL INFORMATION 
+
+    - Description of the hotel
+    - Facilities like swimming pool, spa, conference, gym
+
+
+
 
 
 
