@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+import org.joda.time.DateTime;
+import org.springframework.data.annotation.CreatedDate;
+
 @Entity
 public class Room{
 
@@ -17,7 +20,10 @@ public class Room{
     private String name; //DELUXE, STANDARD, SUPERIOR, PRESIDENTIAL, 
 
     @NotNull
-    private long hotel_id;
+    private long hotel_id; //foreign key to room entity;
+
+    @CreatedDate
+    private DateTime created_date;
 
     public Room(){
     }
@@ -45,6 +51,22 @@ public class Room{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public long getHotel_id() {
+        return hotel_id;
+    }
+
+    public void setHotel_id(long hotel_id) {
+        this.hotel_id = hotel_id;
+    }
+
+    public DateTime getCreated_date() {
+        return created_date;
+    }
+
+    public void setCreated_date(DateTime created_date) {
+        this.created_date = created_date;
     }
 
 }

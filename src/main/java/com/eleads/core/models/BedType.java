@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+import org.joda.time.DateTime;
+import org.springframework.data.annotation.CreatedDate;
+
 @Entity
 public class BedType{
 
@@ -15,6 +18,15 @@ public class BedType{
 
     @NotNull
     private String type;
+
+    @CreatedDate
+    private DateTime created_date;
+
+    public BedType(String type) {
+        this.type = type;
+    }
+
+    public BedType(){}
 
     public long getId() {
         return id;
@@ -30,6 +42,14 @@ public class BedType{
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public DateTime getCreated_date() {
+        return created_date;
+    }
+
+    public void setCreated_date(DateTime created_date) {
+        this.created_date = created_date;
     }
 
 }

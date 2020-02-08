@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+import org.joda.time.DateTime;
+import org.springframework.data.annotation.CreatedDate;
+
 @Entity
 public class Hotel{
 
@@ -27,6 +30,9 @@ public class Hotel{
     private String terms_and_conditions; //url - path to
 
     private String photo_paths; //relative paths to the images
+
+    @CreatedDate
+    private DateTime created_date;
 
     public Hotel(){}
 
@@ -93,6 +99,14 @@ public class Hotel{
 
     public void setPhoto_paths(String photo_paths) {
         this.photo_paths = photo_paths;
+    }
+
+    public DateTime getCreated_date() {
+        return created_date;
+    }
+
+    public void setCreated_date(DateTime created_date) {
+        this.created_date = created_date;
     }
 
 }

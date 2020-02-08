@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+import org.joda.time.DateTime;
+import org.springframework.data.annotation.CreatedDate;
+
 @Entity
 public class BedSize{
 
@@ -15,6 +18,9 @@ public class BedSize{
 
     @NotNull
     private String size;
+
+    @CreatedDate
+    private DateTime created_date;
 
     public BedSize(String size) {
         this.size = size;
@@ -34,6 +40,14 @@ public class BedSize{
 
     public void setSize(String size) {
         this.size = size;
+    }
+
+    public DateTime getCreated_date() {
+        return created_date;
+    }
+
+    public void setCreated_date(DateTime created_date) {
+        this.created_date = created_date;
     }
 
 }

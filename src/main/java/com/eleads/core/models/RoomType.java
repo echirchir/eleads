@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+import org.joda.time.DateTime;
+import org.springframework.data.annotation.CreatedDate;
+
 @Entity
 public class RoomType{
 
@@ -24,6 +27,9 @@ public class RoomType{
 
     @NotNull
     private int number_of_beds; //1, 2, 3, 4, 5
+
+    @CreatedDate
+    private DateTime created_date; //auditing
 
     @NotNull
     private long bed_size_id;
@@ -74,6 +80,14 @@ public class RoomType{
 
     public void setBed_size_id(long bed_size_id) {
         this.bed_size_id = bed_size_id;
+    }
+
+    public DateTime getCreated_date() {
+        return created_date;
+    }
+
+    public void setCreated_date(DateTime created_date) {
+        this.created_date = created_date;
     }
 
 }

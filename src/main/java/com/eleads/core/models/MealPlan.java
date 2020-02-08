@@ -23,7 +23,7 @@ public class MealPlan {
     private String plan;
 
     @CreatedDate
-    private DateTime createdDate;
+    private DateTime created_date;
 
     public MealPlan() {
     }
@@ -53,12 +53,12 @@ public class MealPlan {
         this.plan = plan;
     }
 
-    public DateTime getCreatedDate() {
-        return createdDate;
+    public DateTime getCreated_date() {
+        return created_date;
     }
 
-    public void setCreatedDate(DateTime createdDate) {
-        this.createdDate = createdDate;
+    public void setCreated_date(DateTime created_date) {
+        this.created_date = created_date;
     }
  
 }
