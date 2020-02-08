@@ -17,10 +17,14 @@ public class RoomType{
     private String type; //single, double, twin, tripple
 
     @NotNull
+    private long room_id;
+
+    @NotNull
     private long meal_plan_id; //1, 2, 3, 4, 5
 
     @NotNull
     private int number_of_beds; //1, 2, 3, 4, 5
 
+    
 
 }

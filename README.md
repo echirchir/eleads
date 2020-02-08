@@ -1,18 +1,24 @@
 # ROOM NAMES CATEGORIES
 
-### DELUXE
+### DELUXE (ROOM)
 
-- SINGLE
+- SINGLE (TYPE)
 
-        -NUMBER OF BEDS (1)
+        -NUMBER OF BEDS (1,2,3,4,5)
 
         -BED TYPE 
         
-            (SINGLE, DOUBLE, LARGE, XTRA LARGE, BUNK)
+            SINGLE, 
+            DOUBLE, 
+            LARGE, 
+            XTRA LARGE, 
+            BUNK
 
         -BED SIZE 
 
-            (SINGLE(90X130CM WIDE))
+            SINGLE(90X130CM WIDE
+            SINGLE(90X130CM WIDE
+            SINGLE(90X130CM WIDE
 
         -MEAL PLANS
 
@@ -39,6 +45,8 @@
 - TRIPPLE
 
 - FAMILY SUITE
+
+[CUSTOMER -> HOTEL -> ROOM -> ROOMTYPE -> [number_of_beds, bed_type, bed_size, meal_plan]]
 
 
 # CUSTOMER (schema)

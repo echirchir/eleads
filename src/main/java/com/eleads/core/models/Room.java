@@ -16,7 +16,15 @@ public class Room{
     @NotNull
     private String name; //DELUXE, STANDARD, SUPERIOR, PRESIDENTIAL, 
 
+    @NotNull
+    private long hotel_id;
+
     public Room(){
+    }
+
+    public Room(String name, long hotel_id) {
+        this.name = name;
+        this.hotel_id = hotel_id;
     }
 
     public Room(String name) {

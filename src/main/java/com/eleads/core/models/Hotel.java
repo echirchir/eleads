@@ -30,8 +30,7 @@ public class Hotel{
 
     public Hotel(){}
 
-    public Hotel(long customer_id, String description, String facilities,
-            String what_is_nearby, String terms_and_conditions, String photo_paths) {
+    public Hotel(long customer_id, String description, String facilities, String what_is_nearby, String terms_and_conditions, String photo_paths) {
         this.customer_id = customer_id;
         this.description = description;
         this.facilities = facilities;

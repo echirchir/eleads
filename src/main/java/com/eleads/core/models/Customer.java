@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+import org.joda.time.DateTime;
+import org.springframework.data.annotation.CreatedDate;
+
 @Entity
 public class Customer{
 
@@ -29,6 +32,9 @@ public class Customer{
     private String postal_code;
     @NotNull
     private String mode_of_payment;
+
+    @CreatedDate
+    private DateTime created_date;
 
     private String custom_one;
     private String custom_two;
@@ -160,5 +166,12 @@ public class Customer{
         this.full_name = full_name;
     }
 
+    public DateTime getCreated_date() {
+        return created_date;
+    }
+
+    public void setCreated_date(DateTime created_date) {
+        this.created_date = created_date;
+    }
 
 }
