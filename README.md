@@ -6,9 +6,13 @@
 
         -NUMBER OF BEDS (1)
 
-            -BED TYPE (SINGLE, DOUBLE, LARGE, XTRA LARGE, BUNK)
+        -BED TYPE 
+        
+            (SINGLE, DOUBLE, LARGE, XTRA LARGE, BUNK)
 
-            -BED SIZE (SINGLE(90X130CM WIDE))
+        -BED SIZE 
+
+            (SINGLE(90X130CM WIDE))
 
         -MEAL PLANS
 

@@ -14,12 +14,29 @@ public class Room{
     private int id;
 
     @NotNull
-    private String name;
+    private String name; //DELUXE, STANDARD, SUPERIOR, PRESIDENTIAL, 
 
-    @NotNull
-    private long type_id;
+    public Room(){
+    }
 
-    @NotNull
-    private int number_of_beds;
+    public Room(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
 }

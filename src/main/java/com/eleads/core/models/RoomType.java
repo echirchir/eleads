@@ -22,5 +22,5 @@ public class RoomType{
     @NotNull
     private int number_of_beds; //1, 2, 3, 4, 5
 
-    
+
 }
