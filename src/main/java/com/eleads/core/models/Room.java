@@ -11,7 +11,7 @@ public class Room{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long id;
 
     @NotNull
     private String name; //DELUXE, STANDARD, SUPERIOR, PRESIDENTIAL, 
@@ -31,11 +31,11 @@ public class Room{
         this.name = name;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

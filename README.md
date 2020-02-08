@@ -11,7 +11,7 @@
             SINGLE, 
             DOUBLE, 
             LARGE, 
-            XTRA LARGE, 
+            XTRA LARGE,
             BUNK
 
         -BED SIZE 
@@ -46,7 +46,7 @@
 
 - FAMILY SUITE
 
-[CUSTOMER -> HOTEL -> ROOM -> ROOMTYPE -> [number_of_beds, bed_type, bed_size, meal_plan]]
+[CUSTOMER -> HOTEL -> ROOM -> ROOMTYPE -> (number_of_beds, bed_type, bed_size, meal_plan)]
 
 
 # CUSTOMER (schema)
