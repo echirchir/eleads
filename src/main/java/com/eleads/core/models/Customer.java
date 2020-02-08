@@ -16,7 +16,7 @@ public class Customer{
     @NotNull
     private long unique_hotel_id;
     @NotNull
-    private String customer_name;
+    private String full_name;
     @NotNull
     private String email_address;
     @NotNull
@@ -35,6 +35,26 @@ public class Customer{
     private String custom_three;
     private String custom_four;
 
+    public Customer() {
+    }
+
+    public Customer(long unique_hotel_id, String full_name, String email_address,String phone_number, String address_one, String address_two,
+            String postal_code, String mode_of_payment, String custom_one, String custom_two,
+            String custom_three, String custom_four) {
+        this.unique_hotel_id = unique_hotel_id;
+        this.full_name = full_name;
+        this.email_address = email_address;
+        this.phone_number = phone_number;
+        this.address_one = address_one;
+        this.address_two = address_two;
+        this.postal_code = postal_code;
+        this.mode_of_payment = mode_of_payment;
+        this.custom_one = custom_one;
+        this.custom_two = custom_two;
+        this.custom_three = custom_three;
+        this.custom_four = custom_four;
+    }
+
     public int getId() {
         return id;
     }
@@ -51,14 +71,7 @@ public class Customer{
         this.unique_hotel_id = unique_hotel_id;
     }
 
-    public String getCustomer_name() {
-        return customer_name;
-    }
-
-    public void setCustomer_name(String customer_name) {
-        this.customer_name = customer_name;
-    }
-
+    
     public String getEmail_address() {
         return email_address;
     }
@@ -138,5 +151,14 @@ public class Customer{
     public void setCustom_four(String custom_four) {
         this.custom_four = custom_four;
     }
-  
+
+    public String getFull_name() {
+        return full_name;
+    }
+
+    public void setFull_name(String full_name) {
+        this.full_name = full_name;
+    }
+
+
 }
