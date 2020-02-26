@@ -5,7 +5,7 @@ import com.eleads.core.models.Customer;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@RepositoryRestResource(path = "/api/v1/customers", collectionResourceRel = "customers")
+@RepositoryRestResource(path = "customers", collectionResourceRel = "customers")
 public interface CustomersRepository extends PagingAndSortingRepository<Customer, Integer>{
     
 }
