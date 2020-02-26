@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan("com.eleads.core.controllers")
-//@EnableJpaRepositories(basePackageClasses = {CustomersRepository.class, HotelsRepository.class, RoomsRepository.class, RoomTypeRepository.class})
+@EnableJpaRepositories(basePackageClasses = {CustomersRepository.class, HotelsRepository.class, RoomsRepository.class, RoomTypeRepository.class})
 public class EleadsApplication {
 
 	public static void main(String[] args) {
